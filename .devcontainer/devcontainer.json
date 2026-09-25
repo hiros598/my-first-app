@@ -1,0 +1,5 @@
+{
+  "name": "my-first-app",
+  "image": "mcr.microsoft.com/devcontainers/universal:6",
+  "postCreateCommand": "npx -y @playwright/mcp@0.0.82 install-browser chrome-for-testing && sudo npx -y playwright install-deps chromium"
+}

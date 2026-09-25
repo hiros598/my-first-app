@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>山田博 | 自己紹介</title>
+  <meta name="description" content="大家さん・山田博の自己紹介ページです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --surface: #fffdf8;
+      --text: #2b2620;
+      --muted: #6f655a;
+      --accent: #b5562b;
+      --accent-soft: #f1ddd0;
+      --line: #e3d9cb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1915;
+        --surface: #26221d;
+        --text: #eee6da;
+        --muted: #a99d8f;
+        --accent: #e08a5c;
+        --accent-soft: #3a2a20;
+        --line: #3a342c;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Noto Sans JP", sans-serif;
+      line-height: 1.8;
+      padding: 48px 16px;
+    }
+
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 40px 32px;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 32px;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      font-family: "Zen Old Mincho", serif;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-family: "Zen Old Mincho", serif;
+      font-size: 2rem;
+      letter-spacing: 0.1em;
+    }
+
+    .job {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 2px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    section {
+      padding-top: 32px;
+    }
+
+    h2 {
+      font-size: 0.85rem;
+      color: var(--muted);
+      letter-spacing: 0.15em;
+      margin-bottom: 14px;
+    }
+
+    .message {
+      font-family: "Zen Old Mincho", serif;
+      font-size: 1.4rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 16px;
+    }
+
+    .likes {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .likes li {
+      padding: 8px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--bg);
+    }
+
+    .likes span {
+      margin-right: 6px;
+    }
+
+    .sns {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .sns:hover { opacity: 0.85; }
+    .sns:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+
+    footer {
+      text-align: center;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 32px 20px; }
+      h1 { font-size: 1.7rem; }
+      .message { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <header>
+        <div class="avatar" aria-hidden="true">博</div>
+        <h1>山田 博</h1>
+        <p class="job">大家さん</p>
+      </header>
+
+      <section>
+        <h2>ひとこと</h2>
+        <p class="message">「AIで仕事を変えたい」</p>
+      </section>
+
+      <section>
+        <h2>好きなこと</h2>
+        <ul class="likes">
+          <li><span aria-hidden="true">🔨</span>DIY</li>
+          <li><span aria-hidden="true">🎣</span>魚釣り</li>
+          <li><span aria-hidden="true">🏠</span>物件探し</li>
+          <li><span aria-hidden="true">🍱</span>ランチ</li>
+          <li><span aria-hidden="true">🎧</span>音楽サイト</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>SNS</h2>
+        <a class="sns" href="https://open.spotify.com/intl-ja" target="_blank" rel="noopener noreferrer">
+          <span aria-hidden="true">♪</span>Spotify
+        </a>
+      </section>
+    </article>
+
+    <footer>&copy; 2026 山田 博</footer>
+  </main>
+</body>
+</html>
